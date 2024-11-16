@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Portfolio Website</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo">Portfolio</a>
+      <div class="menuToggle"></div>
+      <ul class="nav">
+        <li class="active"><a href="#home">Home</a></li>
+        <li><a href="#services">About</a></li>
+        <li><a href="#portfolio">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </header>
+    <section id="home">
+      <div class="content">
+        <h2>MD AZAN</h2>
+        <p>
+          Aspiring Web Developer | 5-Star HackerRank Developer | Skilled in
+          Python, HTML, JavaScript, & CSS.
+        </p>
+        <a href="#contact" class="btn">Contact Me</a>
+      </div>
+      <img src="profile_img1.png" class="men" />
+    </section>
+    <section id="services">
+      <div class="secText">
+        <h2>What I Am Great At</h2>
+        <p>
+          I am a skilled developer with expertise in Python, web development,
+          and the MERN stack (MongoDB, Express.js, React, Node.js). I specialize
+          in building efficient, scalable solutions, whether it's crafting
+          dynamic websites, developing backend systems, or creating full-stack
+          web applications. With a strong focus on problem-solving, I approach
+          every project with creativity and precision, delivering
+          high-performance, user-friendly products that meet the needs of the
+          user and business alike. My passion lies in turning ideas into
+          functional, innovative solutions that drive success.
+        </p>
+      </div>
+      <div class="content">
+        <div class="servicesBx">
+          <img src="icon5.png" alt="" />
+          <h3>Python Developer</h3>
+        </div>
+        <div class="servicesBx">
+          <img src="icon8.png" alt="" />
+          <h3>Web Development</h3>
+        </div>
+        <div class="servicesBx">
+          <img src="icon6.png" alt="" />
+          <h3>Mern Stack</h3>
+        </div>
+        <div class="servicesBx">
+          <img src="icon7.png" alt="" />
+          <h3>Problem Solver</h3>
+        </div>
+      </div>
+      <div class="center">
+        <a href="#" class="btn">Hire Me</a>
+      </div>
+    </section>
+    <section id="portfolio">
+      <div class="secText">
+        <h2>My Masterpiece Collection</h2>
+        <p>
+          Here are a few examples of the projects I’ve worked on, showcasing my
+          skills in Python,and web development:
+        </p>
+      </div>
+      <div class="content">
+        <div class="imgBx">
+          <img src="task-1.png" alt="" />
+        </div>
+        <div class="imgBx">
+          <img src="task-2.png" alt="" />
+        </div>
+        <div class="imgBx">
+          <img src="task-3.png" alt="" />
+        </div>
+        <div class="imgBx">
+          <img src="task-4.png" alt="" />
+        </div>
+        <div class="imgBx">
+          <img src="task-5.png" alt="" />
+        </div>
+        <div class="imgBx">
+          <img src="task-6.png" alt="" />
+        </div>
+      </div>
+      <div class="center">
+        <a href="#" class="btn">View More</a>
+      </div>
+    </section>
+    <section id="contact">
+      <div class="secText">
+        <h2>Ways To Contact Me</h2>
+        <p>
+          I’d love to hear from you! Whether you have a project in mind, a
+          question about my work, or just want to connect, feel free to reach
+          out. I’m always open to new opportunities and collaborations.
+        </p>
+      </div>
+      <div class="content">
+        <a href="#">
+          <ion-icon name="mail-outline"></ion-icon> azanmd542@gmail.com
+        </a>
+        <a href="#">
+          <ion-icon name="call-outline"></ion-icon> +91 7903765357
+        </a>
+
+        <a href="#">
+          <ion-icon name="logo-linkedin"></ion-icon>
+          https://www.linkedin.com/in/iamazan/
+        </a>
+
+        <a href="#">
+          <ion-icon name="logo-whatsapp"></ion-icon> whatsapp +91 7903765357
+        </a>
+      </div>
+      <div class="center">
+        <p class="copyrights">
+          Copyright © 2024 <a href="#">Developed By Md Azan</a>. All Right
+          Reserved.
+        </p>
+      </div>
+    </section>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script>
+      const list = document.querySelectorAll(".nav li");
+      function active() {
+        list.forEach((i) => i.classList.remove("active"));
+        this.classList.add("active");
+      }
+      list.forEach((i) => i.addEventListener("click", active));
+
+      let menuToggle = document.querySelector(".menuToggle");
+      let header = document.querySelector("header");
+      menuToggle.onclick = function () {
+        header.classList.toggle("active");
+      };
+    </script>
+  </body>
+</html>
